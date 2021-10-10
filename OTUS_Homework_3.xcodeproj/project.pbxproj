@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B021D712713375A00AF6544 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B021D702713375A00AF6544 /* ServiceLocator.swift */; };
+		2B021D722713375A00AF6544 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B021D702713375A00AF6544 /* ServiceLocator.swift */; };
 		2B0E217E270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E216B270F4CBE0076E3C2 /* OTUS_Homework_3App.swift */; };
 		2B0E217F270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E216B270F4CBE0076E3C2 /* OTUS_Homework_3App.swift */; };
 		2B0E2180270F4CBF0076E3C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E216C270F4CBE0076E3C2 /* ContentView.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B021D702713375A00AF6544 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		2B0E216B270F4CBE0076E3C2 /* OTUS_Homework_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUS_Homework_3App.swift; sourceTree = "<group>"; };
 		2B0E216C270F4CBE0076E3C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B021D6F2713374800AF6544 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B021D702713375A00AF6544 /* ServiceLocator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		2B0E2165270F4CBD0076E3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +68,7 @@
 		2B0E216A270F4CBE0076E3C2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2B021D6F2713374800AF6544 /* Core */,
 				2B0E216B270F4CBE0076E3C2 /* OTUS_Homework_3App.swift */,
 				2B0E216C270F4CBE0076E3C2 /* ContentView.swift */,
 				2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */,
@@ -187,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B021D712713375A00AF6544 /* ServiceLocator.swift in Sources */,
 				2B0E2180270F4CBF0076E3C2 /* ContentView.swift in Sources */,
 				2B0E217E270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */,
 			);
@@ -196,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B021D722713375A00AF6544 /* ServiceLocator.swift in Sources */,
 				2B0E2181270F4CBF0076E3C2 /* ContentView.swift in Sources */,
 				2B0E217F270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */,
 			);
