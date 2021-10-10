@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2B0E2181270F4CBF0076E3C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E216C270F4CBE0076E3C2 /* ContentView.swift */; };
 		2B0E2182270F4CBF0076E3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */; };
 		2B0E2183270F4CBF0076E3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */; };
+		2BCB338C271344CD00E8F8DF /* MoviesApi in Frameworks */ = {isa = PBXBuildFile; productRef = 2BCB338B271344CD00E8F8DF /* MoviesApi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCB338C271344CD00E8F8DF /* MoviesApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +120,9 @@
 			dependencies = (
 			);
 			name = "OTUS_Homework_3 (iOS)";
+			packageProductDependencies = (
+				2BCB338B271344CD00E8F8DF /* MoviesApi */,
+			);
 			productName = "OTUS_Homework_3 (iOS)";
 			productReference = 2B0E2172270F4CBF0076E3C2 /* OTUS_Homework_3.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 2B0E2165270F4CBD0076E3C2;
+			packageReferences = (
+				2BCB338A271344CD00E8F8DF /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */,
+			);
 			productRefGroup = 2B0E2173270F4CBF0076E3C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -453,6 +461,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BCB338A271344CD00E8F8DF /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vpogorelskiy/OTUS_MoviesApi";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BCB338B271344CD00E8F8DF /* MoviesApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BCB338A271344CD00E8F8DF /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */;
+			productName = MoviesApi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B0E2166270F4CBD0076E3C2 /* Project object */;
 }
