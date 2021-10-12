@@ -4,19 +4,18 @@ class Resolver {
     
     typealias ResolveBlock<T> = (Resolver) -> T
     
-    private var initBlocks: [String: ResolveBlock<Any>] = [:]
+    private var resolveBlocks: [String: ResolveBlock<Any>] = [:]
     
-    func register<T>(_ type: T.Type, initBlock: @escaping ResolveBlock<T>) {
+    func register<T>(_ type: T.Type, resolveBlock: @escaping ResolveBlock<T>) {
         let typeName = stringFrom(type: type.self)
-        initBlocks[typeName] = initBlock
+        resolveBlocks[typeName] = resolveBlock
     }
     
     func resolve<T>(_ type: T.Type) -> T? {
         let typeName = stringFrom(type: type.self)
-        let block = initBlocks[typeName]
+        let block = resolveBlocks[typeName]
         
         return block?(self) as? T
-        
     }
     
     private func stringFrom<T>(type: T.Type) -> String {
