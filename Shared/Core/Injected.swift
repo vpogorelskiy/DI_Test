@@ -2,7 +2,7 @@
 import Foundation
 
 @propertyWrapper struct Injected<Value> {
-    private var storedValue: Value?
+    private var storedValue: Value!
     
     var wrappedValue: Value? {
         mutating set {

@@ -15,6 +15,8 @@
 		2B0E2181270F4CBF0076E3C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E216C270F4CBE0076E3C2 /* ContentView.swift */; };
 		2B0E2182270F4CBF0076E3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */; };
 		2B0E2183270F4CBF0076E3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */; };
+		2B7AF06A2715FF6000442B9F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7AF0692715FF6000442B9F /* Resolver.swift */; };
+		2B7AF06B2715FF6000442B9F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7AF0692715FF6000442B9F /* Resolver.swift */; };
 		2BCB338C271344CD00E8F8DF /* MoviesApi in Frameworks */ = {isa = PBXBuildFile; productRef = 2BCB338B271344CD00E8F8DF /* MoviesApi */; };
 		2BCB338E271345F100E8F8DF /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB338D271345F100E8F8DF /* Injected.swift */; };
 		2BCB338F271345F100E8F8DF /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB338D271345F100E8F8DF /* Injected.swift */; };
@@ -30,6 +32,7 @@
 		2B0E217A270F4CBF0076E3C2 /* OTUS_Homework_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_Homework_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E217C270F4CBF0076E3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0E217D270F4CBF0076E3C2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2B7AF0692715FF6000442B9F /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		2BCB338D271345F100E8F8DF /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2B021D702713375A00AF6544 /* ServiceLocator.swift */,
+				2B7AF0692715FF6000442B9F /* Resolver.swift */,
 				2BCB338D271345F100E8F8DF /* Injected.swift */,
 			);
 			path = Core;
@@ -211,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7AF06A2715FF6000442B9F /* Resolver.swift in Sources */,
 				2B021D712713375A00AF6544 /* ServiceLocator.swift in Sources */,
 				2B0E2180270F4CBF0076E3C2 /* ContentView.swift in Sources */,
 				2B0E217E270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7AF06B2715FF6000442B9F /* Resolver.swift in Sources */,
 				2B021D722713375A00AF6544 /* ServiceLocator.swift in Sources */,
 				2B0E2181270F4CBF0076E3C2 /* ContentView.swift in Sources */,
 				2B0E217F270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */,

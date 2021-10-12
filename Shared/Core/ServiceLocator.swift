@@ -8,7 +8,15 @@ class ServiceLocator {
     
     func getInstanceOf<T>(type: T.Type) -> T? {
         let typeName = stringFrom(type: type)
-        return storedReferences[typeName] as? T
+        if let storedInstance = storedReferences[typeName] as? T {
+            return storedInstance
+        }
+        if let resolved = Resolver.sharedInstance.resolve(type) {
+            saveInstance(resolved)
+            return resolved
+        }
+        
+        return nil
     }
     
     func saveInstance<T>(_ instance: T) {
