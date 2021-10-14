@@ -20,6 +20,8 @@
 		2BCB338C271344CD00E8F8DF /* MoviesApi in Frameworks */ = {isa = PBXBuildFile; productRef = 2BCB338B271344CD00E8F8DF /* MoviesApi */; };
 		2BCB338E271345F100E8F8DF /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB338D271345F100E8F8DF /* Injected.swift */; };
 		2BCB338F271345F100E8F8DF /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB338D271345F100E8F8DF /* Injected.swift */; };
+		D675D5262718289F00E45C92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675D5252718289F00E45C92 /* ViewModel.swift */; };
+		D675D528271828CF00E45C92 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D675D527271828CF00E45C92 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		2B0E217D270F4CBF0076E3C2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2B7AF0692715FF6000442B9F /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		2BCB338D271345F100E8F8DF /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		D675D5252718289F00E45C92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D675D527271828CF00E45C92 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D6D133502718574A00E579D4 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/lib/swift/libswiftWebKit.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +77,17 @@
 				2B0E2174270F4CBF0076E3C2 /* iOS */,
 				2B0E217B270F4CBF0076E3C2 /* macOS */,
 				2B0E2173270F4CBF0076E3C2 /* Products */,
+				D6D1334F2718574A00E579D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2B0E216A270F4CBE0076E3C2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D675D5232718288600E45C92 /* ViewModel */,
+				D675D5222718287700E45C92 /* UI */,
 				2B021D6F2713374800AF6544 /* Core */,
 				2B0E216B270F4CBE0076E3C2 /* OTUS_Homework_3App.swift */,
-				2B0E216C270F4CBE0076E3C2 /* ContentView.swift */,
 				2B0E216D270F4CBF0076E3C2 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -110,6 +117,31 @@
 				2B0E217D270F4CBF0076E3C2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		D675D5222718287700E45C92 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E216C270F4CBE0076E3C2 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D675D5232718288600E45C92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D675D5252718289F00E45C92 /* ViewModel.swift */,
+				D675D527271828CF00E45C92 /* Extensions.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6D1334F2718574A00E579D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6D133502718574A00E579D4 /* libswiftWebKit.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +251,9 @@
 				2B021D712713375A00AF6544 /* ServiceLocator.swift in Sources */,
 				2B0E2180270F4CBF0076E3C2 /* ContentView.swift in Sources */,
 				2B0E217E270F4CBF0076E3C2 /* OTUS_Homework_3App.swift in Sources */,
+				D675D5262718289F00E45C92 /* ViewModel.swift in Sources */,
 				2BCB338E271345F100E8F8DF /* Injected.swift in Sources */,
+				D675D528271828CF00E45C92 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +397,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vvp.OTUS-Homework-3";
 				PRODUCT_NAME = OTUS_Homework_3;
 				SDKROOT = iphoneos;
@@ -384,6 +422,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vvp.OTUS-Homework-3";
 				PRODUCT_NAME = OTUS_Homework_3;

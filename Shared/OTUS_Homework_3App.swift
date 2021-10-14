@@ -1,19 +1,14 @@
-//
-//  OTUS_Homework_3App.swift
-//  Shared
-//
-//  Created by Вячеслав Погорельский on 07.10.2021.
-//
-
 import SwiftUI
+import MoviesApi
 
 @main
 struct OTUS_Homework_3App: App {
     
     init() {
-        
+        Resolver.sharedInstance.register(NetworkApi.self) { r in
+            MoviesAPI()
+        }
     }
-    
     
     var body: some Scene {
         WindowGroup {
