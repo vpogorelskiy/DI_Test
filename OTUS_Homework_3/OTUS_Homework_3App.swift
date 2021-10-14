@@ -12,7 +12,7 @@ struct OTUS_Homework_3App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(MovieViewModel())
         }
     }
 }

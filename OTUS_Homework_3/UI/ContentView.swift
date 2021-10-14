@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: MovieViewModel
     
     var body: some View {
-        List {
-            ForEach(viewModel.items, id: \.title) { item in
-                Text(item.title)
-            }
-        }.onAppear {
-            viewModel.reloadData()
+        NavigationView {
+            List {
+                ForEach(viewModel.networkApi.items, id: \.title) { item in
+                    Text(item.title)
+                }
+            }.onAppear {
+                viewModel.reloadData()
+            }.navigationTitle("Movies list")
         }
     }
 }
@@ -25,6 +27,6 @@ struct ContentView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(MovieViewModel())
     }
 }

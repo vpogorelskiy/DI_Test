@@ -4,7 +4,7 @@ import Foundation
 @propertyWrapper struct Injected<Value> {
     private var storedValue: Value!
     
-    var wrappedValue: Value? {
+    var wrappedValue: Value! {
         mutating set {
             storedValue = newValue
         }
@@ -15,5 +15,10 @@ import Foundation
             storedValue = ServiceLocator.sharedInstance.getInstanceOf(type: Value.self)
             return storedValue
         }
+    }
+    
+    var projectedValue: Injected<Value> {
+        get { self }
+        mutating set { self = newValue }
     }
 }
