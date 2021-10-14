@@ -1,6 +1,6 @@
 import Foundation
 
-class MovieViewModel: ObservableObject {
+class ViewModel: ObservableObject {
     @Injected var networkApi: NetworkApi!
     
     func reloadData() {

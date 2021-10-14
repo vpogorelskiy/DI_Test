@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: MovieViewModel
+    @EnvironmentObject var viewModel: ViewModel
     
     var body: some View {
         NavigationView {
@@ -27,6 +27,6 @@ struct ContentView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        ContentView().environmentObject(MovieViewModel())
+        ContentView().environmentObject(ViewModel())
     }
 }
