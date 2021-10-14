@@ -1,5 +1,4 @@
 import MoviesApi
-import XCTest
 
 extension MoviesAPI: NetworkApi {
     var items: [ViewModelItem] {
