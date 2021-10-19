@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by Вячеслав Погорельский on 07.10.2021.
-//
 
 import SwiftUI
 
@@ -13,7 +7,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.networkApi.items, id: \.title) { item in
+                ForEach(viewModel.items, id: \.title) { item in
                     Text(item.title)
                 }
             }.onAppear {

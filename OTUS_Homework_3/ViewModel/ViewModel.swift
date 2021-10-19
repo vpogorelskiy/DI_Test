@@ -1,18 +1,19 @@
 import Foundation
+import SwiftUI
 
 class ViewModel: ObservableObject {
-    @Injected var networkApi: NetworkApi!
+    @Injected private var networkApi: NetworkApi!
+    @Published var items: [ViewModelItem] = []
     
     func reloadData() {
-        networkApi.loadData(forQuery: "Movie")
+        networkApi.loadData(forQuery: "Movie") { [weak self] response, error in
+            self?.items = response.map{ ViewModelItem(title: $0.title ?? "") }
+        }
     }
 }
 
-protocol NetworkApi {
-    var items: [ViewModelItem] { get }
-    func loadData(forQuery: String)
+struct ViewModelItem {
+    var title: String
 }
 
-protocol ViewModelItem {
-    var title: String { get }
-}
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBB3DAD271EE63F0089BB3F /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB3DAC271EE63F0089BB3F /* NetworkApi.swift */; };
 		D6D133D527185AE100E579D4 /* OTUS_Homework_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D133D427185AE100E579D4 /* OTUS_Homework_3App.swift */; };
 		D6D133D927185AE300E579D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D133D827185AE300E579D4 /* Assets.xcassets */; };
 		D6D133DC27185AE300E579D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D133DB27185AE300E579D4 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BBB3DAC271EE63F0089BB3F /* NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
 		D6D133D127185AE100E579D4 /* OTUS_Homework_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTUS_Homework_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D133D427185AE100E579D4 /* OTUS_Homework_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUS_Homework_3App.swift; sourceTree = "<group>"; };
 		D6D133D827185AE300E579D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,8 +68,8 @@
 			children = (
 				D6D133F127185B2A00E579D4 /* OTUS-Homework-3-Info.plist */,
 				D6D133E727185B1100E579D4 /* Core */,
-				D6D133E527185B1100E579D4 /* UI */,
 				D6D133E227185B1000E579D4 /* ViewModel */,
+				D6D133E527185B1100E579D4 /* UI */,
 				D6D133D427185AE100E579D4 /* OTUS_Homework_3App.swift */,
 				D6D133D827185AE300E579D4 /* Assets.xcassets */,
 				D6D133DA27185AE300E579D4 /* Preview Content */,
@@ -106,6 +108,7 @@
 				D6D133E827185B1100E579D4 /* ServiceLocator.swift */,
 				D6D133E927185B1100E579D4 /* Injected.swift */,
 				D6D133EA27185B1100E579D4 /* Resolver.swift */,
+				2BBB3DAC271EE63F0089BB3F /* NetworkApi.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				D6D133D527185AE100E579D4 /* OTUS_Homework_3App.swift in Sources */,
 				D6D133F027185B1100E579D4 /* Resolver.swift in Sources */,
 				D6D133EF27185B1100E579D4 /* Injected.swift in Sources */,
+				2BBB3DAD271EE63F0089BB3F /* NetworkApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
