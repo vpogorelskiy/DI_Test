@@ -1,14 +1,23 @@
 import Foundation
-import SwiftUI
+import Combine
 
 class ViewModel: ObservableObject {
     @Injected private var networkApi: NetworkApi!
-    @Published var items: [ViewModelItem] = []
+    @Published var items: [ViewModelItem] = [ViewModelItem(title: "No results")]
+    @Published var query: String = ""
     
-    func reloadData() {
-        networkApi.loadData(forQuery: "Movie") { [weak self] response, error in
-            self?.items = response.map{ ViewModelItem(title: $0.title ?? "") }
-        }
+    private var subscriptions = Set<AnyCancellable>()
+    
+    init() {
+        $query
+            .debounce(for: .seconds(1),
+                         scheduler: DispatchQueue.main)
+            .sink { [weak self] q in
+                self?.networkApi.loadData(forQuery: q) { [weak self] response, error in
+                    self?.items = response.map{ ViewModelItem(title: $0.title ?? "") }
+                }
+            }
+            .store(in: &subscriptions)
     }
 }
 

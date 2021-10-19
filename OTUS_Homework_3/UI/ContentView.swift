@@ -6,13 +6,15 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.items, id: \.title) { item in
-                    Text(item.title)
-                }
-            }.onAppear {
-                viewModel.reloadData()
-            }.navigationTitle("Movies list")
+            VStack {
+                TextField("Search", text: $viewModel.query)
+                    .padding()
+                List {
+                    ForEach(viewModel.items, id: \.title) { item in
+                        Text(item.title)
+                    }
+                }.navigationTitle("Movies list")
+            }
         }
     }
 }
