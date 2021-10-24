@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1107C72725D5DE005E44A5 /* MoviesApi in Frameworks */ = {isa = PBXBuildFile; productRef = 2B1107C62725D5DE005E44A5 /* MoviesApi */; };
 		2BBB3DAD271EE63F0089BB3F /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB3DAC271EE63F0089BB3F /* NetworkApi.swift */; };
 		D6D133D527185AE100E579D4 /* OTUS_Homework_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D133D427185AE100E579D4 /* OTUS_Homework_3App.swift */; };
 		D6D133D927185AE300E579D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D133D827185AE300E579D4 /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		D6D133EE27185B1100E579D4 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D133E827185B1100E579D4 /* ServiceLocator.swift */; };
 		D6D133EF27185B1100E579D4 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D133E927185B1100E579D4 /* Injected.swift */; };
 		D6D133F027185B1100E579D4 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D133EA27185B1100E579D4 /* Resolver.swift */; };
-		D6D133F427185B3700E579D4 /* MoviesApi in Frameworks */ = {isa = PBXBuildFile; productRef = D6D133F327185B3700E579D4 /* MoviesApi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D133F427185B3700E579D4 /* MoviesApi in Frameworks */,
+				2B1107C72725D5DE005E44A5 /* MoviesApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			);
 			name = OTUS_Homework_3;
 			packageProductDependencies = (
-				D6D133F327185B3700E579D4 /* MoviesApi */,
+				2B1107C62725D5DE005E44A5 /* MoviesApi */,
 			);
 			productName = OTUS_Homework_3;
 			productReference = D6D133D127185AE100E579D4 /* OTUS_Homework_3.app */;
@@ -161,7 +161,7 @@
 			);
 			mainGroup = D6D133C827185AE100E579D4;
 			packageReferences = (
-				D6D133F227185B3700E579D4 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */,
+				2B1107C52725D5DE005E44A5 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */,
 			);
 			productRefGroup = D6D133D227185AE100E579D4 /* Products */;
 			projectDirPath = "";
@@ -405,9 +405,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D6D133F227185B3700E579D4 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */ = {
+		2B1107C52725D5DE005E44A5 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:vpogorelskiy/OTUS_MoviesApi.git";
+			repositoryURL = "https://github.com/vpogorelskiy/OTUS_MoviesApi";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -416,9 +416,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D6D133F327185B3700E579D4 /* MoviesApi */ = {
+		2B1107C62725D5DE005E44A5 /* MoviesApi */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D6D133F227185B3700E579D4 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */;
+			package = 2B1107C52725D5DE005E44A5 /* XCRemoteSwiftPackageReference "OTUS_MoviesApi" */;
 			productName = MoviesApi;
 		};
 /* End XCSwiftPackageProductDependency section */
